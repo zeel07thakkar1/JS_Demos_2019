@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Events</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h1 id="demo" onmouseover="document.getElementById('demo').innerHTML='This is onmouseover()'">Hi...Zeel!!!</h1>
+	<h2 id="demo1" onmouseout="document.getElementById('demo1').innerHTML='This is onmouseout()'">Hi...Zeel!!!</h1>
+	<input type="text" id="fname" onchange="myfun()"><br><br>
+<script>
+	
+
+	function myfun () {
+		
+		var x=document.getElementById("fname");
+		x.value=x.value.toUpperCase();
+
+	}
+</script>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Hello Zeel'">Click Me</button>
+
+	
+</body>
+</html>

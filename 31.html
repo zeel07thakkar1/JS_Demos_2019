@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Finding Elements</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+	<p class="demo2">this is js</p>
+
+	<script>
+		document.getElementById('demo').innerHTML="Hi..Zeel!!!";//html element access by ID
+
+		var x=document.getElementsByTagName('p');//get the p element..
+		document.getElementById('demo').innerHTML="The JS & "+x[0].innerHTML;
+
+		document.getElementsByClassName('demo2');
+		document.getElementById('demo').innerHTML="The JS & "+x[0].innerHTML;
+	</script>
+</body>
+</html>

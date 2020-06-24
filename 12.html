@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Arrays</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script>
+		var cars=['BMW','Volvo','I20'];
+		var fruits=['Apple','Banana','Mango','orange'];
+		var clr=['Red','Black','Green','Yellow'];
+		
+
+		cars[0]="Aulto";
+
+		cars.pop();/*remove last element from array*/
+		cars.shift();/*remove first element from array*/ 
+
+		delete cars[0]; /*delete first element of array*/
+
+		cars.splice(1, 0, "I10","Tiago");
+
+		clr.sort();
+		clr.reverse();
+
+
+
+
+	</script>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars">Check Array</button>
+	
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars[0];">Array Index0</button><!--access first element-->
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars[1];">Array Index1</button>
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars[2];">Array Index2</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Length of the Array:'+cars.length">Check Length</button><!--length of the array-->
+
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars">Change Array</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars.push('Audi')">Add New Element</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars.join('*')">Join</button><!--join with any separator-->
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars">fun_pop</button>
+	
+	<button type="button" onclick="document.getElementById('demo').innerHTML=cars.unshift('Audi')">Unshift()</button>
+
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=fruits.concat(clr)">Concat()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=clr.slice(1)">slice(clr(1))</button>
+	<!--slice method slice out array from the position-->
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=fruits.slice(1,3)">Slice(Fruit(1,3))</button><!--starting position , end position up to this (end pos not include)-->
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML=clr">Sort()</button>
+	<button type="button" onclick="document.getElementById('demo').innerHTML=clr">Reverse()</button>
+
+
+
+
+</body>
+</html>

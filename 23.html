@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Replace()</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo">This is my Computer</p>
+<button type="button" onclick="document.getElementById('demo').innerHTML=str1">Change Text</button>
+
+
+<script>
+	var str=document.getElementById('demo').innerHTML;
+	var str1=str.replace("Computer", "Laptop");//case sensitive
+</script>
+</body>
+</html>

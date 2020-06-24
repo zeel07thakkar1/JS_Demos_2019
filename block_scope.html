@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Block Scope</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		if(true)
+		{
+			let i="I m in block";
+			document.write(i + "<br>");
+		}
+
+		document.write(i + "<br>"); //outside scope this variable can be accessed so use [let] keyword instead of var to restrict the scope of i variable.
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Loops</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<script>
+		var cars=['BMW','Mini','Aulto'];
+		var name="javascript";
+		var x,i=0;
+		var text="",text1="";
+
+
+		for(x of cars)//for loop for array
+		{
+			document.write(x+"<br>");
+		}
+
+		for(x of name)//for loop for one string
+		{
+			document.write(x+"<br>");
+		}
+
+//while
+while (i<=10) {
+	
+	text+="number is:"+i;
+	i++;
+}
+document.getElementById('demo').innerHTML=text;
+
+//do..while
+
+do{
+	// statement
+	text1+="number is:"+i;
+	i++;
+} while (i<10);
+
+document.getElementById('demo1').innerHTML=text1;
+</script>
+}
+</body>
+</html>

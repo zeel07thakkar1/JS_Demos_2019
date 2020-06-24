@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Date</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<p id="demo"></p>
+
+	<script>
+		var d=new Date();
+		var d1=new Date("2015-3-25");//ISO Complete specified date
+		var d2=new Date("12/13/1994");//short date (mm/dd/yyyy)
+		var d3=new Date("13 dec 1994");
+
+		d.setFullYear(2020);
+
+		d.setMonth(11);
+		d.setDate(15);
+		d.setHours(22);
+		d.setMinutes(40);
+		d.setSeconds(33);
+
+	
+	</script>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Today_Date/Time: '+d">Date</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Year: '+d.getFullYear()">Year</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Month: '+d.getMonth()">Month</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Date: '+d.getDate()">Date</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Hours: '+d.getHours()">Hours</button>
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Minutes: '+d.getMinutes()">Minutesa</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get seconds: '+d.getSeconds()">Seconds</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Specified date: '+d1">ISO Date()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Short date:'+ d2">Short Date()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Long Date: '+d3">Long Date()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Time: '+d.getTime()">Time</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='Get Day: '+d.getDay()">Day()</button>
+	<!--sunday:0,mon:1,tue:2,wed:3...-->
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='set fullyear: '+d">set Year()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='set month: '+d">set Month()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='set date: '+d">set Date()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='set Hours: '+d">set Hours()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='set Minutes: '+d">set Minutes()</button>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML='set seconds: '+d">set Seconds()</button>
+</body>
+</html>

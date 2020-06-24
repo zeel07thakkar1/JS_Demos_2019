@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rest parameter</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script type="text/javascript">
+		function show(a,...args)  //give args which take all the arguments passes in the calling of function (in array form)  args place always at last
+		{
+			document.write("value of a :"+a+"<br>");
+			document.write("Other Rest Parameter : "+args+"<br>");	
+			document.write("args[0] : "+args[0]);  //index starting from 0		
+		}
+
+		show(10,20,30,40,50);
+	</script>
+</body>
+</html>

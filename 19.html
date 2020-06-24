@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Array Filter()</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<h3>arr_fruits=['apple','banana','orange']</h3>
+	<h3>num=[1,45,87,30,4];</h3>
+	<p id="demo"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+
+	<script>
+		var num=[1,45,87,30,4];
+		var abv_20=num.filter(myfun);
+		var abv_20_every=num.every(myfun2);
+		var abv_10_some=num.some(myfun3);
+		var arr_fruits=['apple','banana','orange'];
+		var abv_10_find=num.find(myfun4);
+		var abv_10_findIndex=num.findIndex(myfun5);
+		var sum=num.reduce(myfun1);
+		
+
+		document.getElementById('demo').innerHTML=abv_20;
+
+		document.getElementById('demo2').innerHTML='reduce()'+sum;
+		document.getElementById('demo2').innerHTML='Above 20 Every()'+abv_20_every;
+		document.getElementById('demo2').innerHTML='Above 10 Some()'+abv_10_some;
+		document.getElementById('demo2').innerHTML='Above 10 find()'+abv_10_find;
+		document.getElementById('demo2').innerHTML='Above 10 findIndex()'+abv_10_findIndex;
+
+		function myfun (value) //filter
+		{
+			
+			return value>20;
+		}
+		function myfun1(total,value)//reduce() and reduceRight():work on right to left
+		{
+			return total=total+value;
+		}
+		function myfun2(value)//every() true when all element of array >20 so give true otherwise false
+		{
+			return value>20;
+		}
+		function myfun3(value)//some() some of elements are >10 in array so give true
+		{
+			return value>10;
+		}
+		function myfun4(value)//find() give 1st element who pass the test function(>10)
+		{
+			return value>10;
+		}
+		function myfun5(value)//findIndex() give 1st element's index who pass the test function(>10)
+		{
+			return value>10;
+		}
+
+
+	</script>
+
+	<button type="button" onclick="document.getElementById('demo3').innerHTML='index of apple is'+arr_fruits.indexOf('apple')">Check Index</button>
+</body>
+</html>
